@@ -3311,6 +3311,7 @@ input, select, textarea {
 		text-align: center;
 		z-index: 1;
 		min-height: 100vh;
+		
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3325,6 +3326,7 @@ input, select, textarea {
 			#intro a:hover {
 				border-bottom-color: transparent;
 				color: #18bfef !important;
+				transform: scale( 1.05); 
 			}
 
 		#intro strong, #intro b {
@@ -3388,8 +3390,10 @@ input, select, textarea {
 		#intro h1 {
 			font-size: 5rem;
 			line-height: 1;
+			
 		}
-
+		
+		
 		#intro p {
 			font-size: 1.25rem;
 			font-style: italic;
@@ -3408,6 +3412,7 @@ input, select, textarea {
 				transform: translateY(2rem);
 				opacity: 0;
 				visibility: hidden;
+				
 			}
 
 		#intro.hidden {
@@ -3431,6 +3436,7 @@ input, select, textarea {
 				transform: translateY(0);
 				opacity: 1;
 				visibility: visible;
+ 
 			}
 
 		body.is-preload #intro {
@@ -3625,6 +3631,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		
 	}
 
 		#nav ul.divided li {
@@ -3655,6 +3662,7 @@ input, select, textarea {
 			#nav a:hover {
 				border-bottom-color: transparent;
 				color: #18bfef !important;
+				
 			}
 
 		#nav strong, #nav b {
@@ -3766,7 +3774,7 @@ input, select, textarea {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			border-top: solid 1px #eeeeee;
 			margin: 0;
 		}
 
@@ -4293,7 +4301,7 @@ input, select, textarea {
 		#footer form label,
 		#footer h3,
 		#footer p {
-			font-size: 0.8rem;
+			font-size: 0.8 rem;
 		}
 
 		@media screen and (max-width: 980px) {
@@ -4620,7 +4628,7 @@ input, select, textarea {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
+		
 			width: 7rem;
 		}
 
@@ -4687,3 +4695,20 @@ input, select, textarea {
 		}
 
 	}
+
+.foto-fluttuante {
+  float: right; /* Mantiene l'immagine a destra */
+  width: 270px; /* Puoi aumentare o diminuire questo valore per rimpicciolire/ingrandire la foto */
+  margin-left: 30px; /* IL TRUCCO È QUI: crea 30 pixel di spazio a sinistra, staccando il testo */
+  margin-bottom: 20px; /* Crea un po' di spazio sotto l'immagine */
+  border-radius: 10px; /* Opzionale: arrotonda i bordi per un effetto più morbido */
+}
+
+/* Aggiungiamo questa regola per il testo accanto all'immagine */
+.chi-sono p {
+  text-align: justify; /* Rende le righe di testo tutte della stessa lunghezza, molto più elegante! */
+  line-height: 1.8; /* Aumenta lo spazio tra una riga e l'altra per migliorare la leggibilità */
+}
+a img, .foto-fluttuante {
+  border-bottom: none !important;
+  text-decoration: none !important;}
